@@ -20,7 +20,7 @@ jobs:
               run: |
                 sudo snap install hugo
             - name: Build
-              run: hugo --minify --destination dist 
+              run: hugo --minify --destination dist --source init4
             - name: Archive build directory
               uses: actions/upload-artifact@v3
               with:
