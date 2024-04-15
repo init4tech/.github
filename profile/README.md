@@ -13,4 +13,4 @@ ___) (___| )  \  |___) (___   | |     | |
 
 > research cooperative building next gen ethereum. in it for the technology.
 
-Follow @init4tech on X for more.
+Follow [@init4tech](https://twitter.com/init4tech) on X for more.
