@@ -1,7 +1,7 @@
 +++
 title = 'About'
 date = 2024-04-15T18:54:42-06:00
-draft = true
+draft = false
 +++
 
 ![networking](/networking.png)

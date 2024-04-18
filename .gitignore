@@ -1,3 +1,4 @@
 init4/public
 init4/resources/*
 init4/.hugo_build.lock
+init4/dist
