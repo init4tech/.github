@@ -25,7 +25,7 @@ jobs:
               uses: actions/upload-artifact@v3
               with:
                 name: dist
-                path: dist
+                path: init4/dist
     deploy-prod: 
         environment: 
           name: Production
@@ -38,7 +38,6 @@ jobs:
               uses: actions/download-artifact@v3
               with:
                 name: dist
-                path: dist
             - name: Configure AWS credentials 
               uses: aws-actions/configure-aws-credentials@v4
               with: 
@@ -49,4 +48,4 @@ jobs:
               env: 
                 AWS_S3_BUCKET : ${{ secrets.AWS_S3_BUCKET }}
               run: |
-                aws s3 sync --delete --sse AES256 dist/ $AWS_S3_BUCKET
+                aws s3 sync --delete --sse AES256 .github/ $AWS_S3_BUCKET
